@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&display=swap');
+
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+:root, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.font-rancho {
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+h2 {
+  font-size: 55px;
+   color: #331A15;
+  font-family: "Rancho", cursive;
+}
+h3 {
+  font-size: 35px;
+  color: #331A15;
+  font-family: "Rancho", cursive;
+}
+
