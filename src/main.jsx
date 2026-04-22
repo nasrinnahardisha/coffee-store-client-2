@@ -1,18 +1,18 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import MainLayouts from "./Components/layouts/MainLayouts.jsx";
-import Home from "./Components/Home.jsx";
-import AddCoffee from "./Components/AddCoffee.jsx";
-import CoffeeDetails from "./Components/CoffeeDetails.jsx";
-import UpdateCoffee from "./Components/UpdateCoffee.jsx";
+import MainLayouts from "./components/layouts/MainLayouts.jsx";
+import Home from "./components/Home.jsx";
+import AddCoffee from "./components/AddCoffee.jsx";
+import CoffeeDetails from "./components/CoffeeDetails.jsx";
+import UpdateCoffee from "./components/UpdateCoffee.jsx";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import SignUp from "./Components/SignUp.jsx";
-import SignIn from "./Components/SignIn.jsx";
-import AuthProvider from "./Components/Contexts/AuthProvider.jsx";
-import Users from "./Components/Users.jsx";
+import SignUp from "./components/SignUp.jsx";
+import SignIn from "./components/SignIn.jsx";
+import AuthProvider from "./components/Contexts/AuthProvider.jsx";
+import Users from "./components/Users.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter([
@@ -65,7 +65,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AuthProvider>
-      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />,
+      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
     </AuthProvider>
   </StrictMode>,
 );
