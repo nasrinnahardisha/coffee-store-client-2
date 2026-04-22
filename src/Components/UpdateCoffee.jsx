@@ -14,7 +14,7 @@ const handleUpdateCoffee = (e) => {
 
   const formData = new FormData(form);
 
-  fetch(`http://localhost:3000/coffees/${_id}`, {
+  fetch(`https://coffee-store-server-2-jxtc.vercel.app/coffees/${_id}`, {
     method: "PUT",
     body: formData, // ⚠️ JSON না
   })
@@ -133,7 +133,7 @@ export default UpdateCoffee;
 // };
 
 // const sendData = (data) => {
-//   fetch(`http://localhost:3000/coffees/${_id}`, {
+//   fetch(`https://coffee-store-server-2-jxtc.vercel.app/coffees/${_id}`, {
 //     method: "PUT",
 //     headers: {
 //       "content-type": "application/json",

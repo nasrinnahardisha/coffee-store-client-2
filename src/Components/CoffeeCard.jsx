@@ -22,7 +22,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
       console.log(result.isConfirmed);
       if (result.isConfirmed) {
         // start deleting the coffee
-        fetch(`http://localhost:3000/coffees/${_id}`, {
+        fetch(`https://coffee-store-server-2-jxtc.vercel.app/coffees/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -48,7 +48,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
   hover:shadow-lg hover:-translate-y-1 group cursor-pointer">
       <div className="w-[185px]">
         <img
-          src={`http://localhost:3000/Images/${photo}`}
+          src={`https://coffee-store-server-2-jxtc.vercel.app/Images/${photo}`}
           alt={name}
           className="w-[190px] h-[240px] object-contain"
         />

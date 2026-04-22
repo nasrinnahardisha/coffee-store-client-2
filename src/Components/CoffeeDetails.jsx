@@ -6,7 +6,7 @@ const CoffeeDetails = () => {
   const coffee = useLoaderData();
 
   const imageUrl = coffee.photo
-    ? `http://localhost:3000/Images/${coffee.photo}`
+    ? `https://coffee-store-server-2-jxtc.vercel.app/Images/${coffee.photo}`
     : "/default.png";
 
   return (

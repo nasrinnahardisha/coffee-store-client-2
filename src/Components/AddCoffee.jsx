@@ -10,7 +10,7 @@ const handleAddCoffee = (e) => {
 
   const formData = new FormData(form);
 
-  fetch("http://localhost:3000/coffees", {
+  fetch("https://coffee-store-server-2-jxtc.vercel.app/coffees", {
     method: "POST",
     body: formData, // ⚠️ no headers
   })
@@ -149,7 +149,7 @@ export default AddCoffee;
 
 //       console.log(newCoffee);
 
-//       fetch("http://localhost:3000/coffees", {
+//       fetch("https://coffee-store-server-2-jxtc.vercel.app/coffees", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",

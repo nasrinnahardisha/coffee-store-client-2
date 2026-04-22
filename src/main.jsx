@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("http://localhost:3000/coffees"),
+        loader: () => fetch("https://coffee-store-server-2-jxtc.vercel.app/coffees"),
         Component: Home,
       },
       {
@@ -32,13 +32,13 @@ const router = createBrowserRouter([
       {
         path: "/coffee/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/coffees/${params.id}`),
+          fetch(`https://coffee-store-server-2-jxtc.vercel.app/coffees/${params.id}`),
         Component: CoffeeDetails,
       },
       {
         path: "/updateCoffee/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/coffees/${params.id}`),
+          fetch(`https://coffee-store-server-2-jxtc.vercel.app/coffees/${params.id}`),
         Component: UpdateCoffee,
       },
       {
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
       },
       {
         path: "users",
-        loader: () => fetch("http://localhost:3000/"),
+        loader: () => fetch("https://coffee-store-server-2-jxtc.vercel.app/"),
         Component: Users,
       },
     ],
