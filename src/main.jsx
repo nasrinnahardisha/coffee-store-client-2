@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import MainLayouts from "./components/layouts/MainLayouts.jsx";
+import MainLayouts from "./components/Layouts/MainLayouts.jsx";
 import Home from "./components/Home.jsx";
 import AddCoffee from "./components/AddCoffee.jsx";
 import CoffeeDetails from "./components/CoffeeDetails.jsx";
