@@ -20,7 +20,7 @@ const CoffeeDetails = () => {
           to="/"
           className="text-[#331A15] text-[30px] font-rancho flex items-center gap-2 mb-10"
         >
-          <FaArrowLeft /> Back to home
+          <FaArrowLeft /> Back to Home
         </Link>
 
         {/* MAIN FLEX (IMPORTANT FIX) */}
